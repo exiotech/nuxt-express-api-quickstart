@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "const": "./api/app/const",
+          "controllers": "./api/app/http/controllers",
+          "middleware": "./api/app/http/middleware",
+          "validators": "./api/app/http/validators",
+          "exceptions": "./api/app/http/exceptions",
+          "services": "./api/app/services",
+          "model": "./api/app/models",
+          "lib": "./api/lib",
+          "config": "./api/config"
+        }
+      }
+    ]
+  ]
+}
